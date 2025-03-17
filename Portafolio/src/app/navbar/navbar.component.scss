@@ -1,0 +1,102 @@
+
+header {
+  background-color: #17202a; /* Rojo oscuro */
+  font-family: "Courier New", Courier, monospace; /* Fuente monospace */
+  height: auto;
+  width: 100%; /* Hace que el header ocupe el 100% del ancho */
+  box-sizing: border-box; /* Asegura que el borde y el padding no afecten el ancho */
+  padding: 0; /* Elimina el padding para que no haya espacio alrededor del header */
+  border: none; /* Asegura que no haya borde alrededor del header */
+}
+
+/* Asegúrate de que los elementos dentro del header no tengan bordes */
+header .row, header .col-4, header .logo-ico {
+  border: none; /* Elimina cualquier borde alrededor de los elementos */
+}
+
+
+
+/* Asegura que el contenido dentro del header esté alineado correctamente */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0%;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f0f0f0; /* Color blanco cuando pasas el cursor */
+}
+
+/* Estilo para el logo en el centro */
+.blog-header-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+}
+.link-secondary i {
+  color: white;
+  margin-left: 15%; /* Espacio entre el texto y el icono */
+  padding: 1%;
+  font-size: 4rem;
+}
+
+/* Estilos para el botón de "Certificaciones" */
+.btn-outline-secondary {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem; /* Tamaño más pequeño para el texto */
+  padding: 0.5rem 1rem;
+  margin-right: 10px; /* Espacio entre el botón y los iconos */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #b3b6b7;
+  color: #fff;
+}
+
+/* Estilo para los iconos de LinkedIn y GitHub */
+.btn i {
+  font-size: 18px; /* Tamaño de los iconos */
+  color: white;    /* Color blanco para los iconos */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .col-4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .col-4.pt-1 {
+    margin-bottom: 10px;
+  }
+
+  .btn-outline-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-header-logo {
+    font-size: 1.2rem;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

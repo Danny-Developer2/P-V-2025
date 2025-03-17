@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@use "bootstrap/scss/bootstrap" as *;
+@use 'ngx-toastr/toastr' as *;
+
+
+/* src/styles.scss */
+
+/* Asegurar que el fondo de toda la página se aplique */
+html, body {
+    background-color: #32373c; /* Gris claro */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+    
+  }
+  
+  
+
+  section {
+    background-color: #32373c;
+  }
