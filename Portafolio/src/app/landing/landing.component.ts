@@ -1,20 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { NavbarComponent } from "./navbar/navbar.component";
 import { CommonModule } from '@angular/common';
-import { CertificacionesComponent } from './certificaciones/certificaciones.component';
-import { LandingComponent } from "./landing/landing.component";
-
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  standalone:true,
-  imports: [RouterOutlet, NavbarComponent, CommonModule, LandingComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  selector: 'app-landing',
+  standalone: true,
+  imports:[CommonModule],
+  templateUrl: './landing.component.html',
+  styleUrl: './landing.component.scss'
 })
-export class AppComponent {
-  title = 'Portafolio';
+export class LandingComponent {
 
 
   proyectosData = [
@@ -52,11 +46,13 @@ export class AppComponent {
     },
     // Añadir más experiencias según sea necesario
   ];
-  
-  
+
 
   getDelay(index: number): string {
     const delay = 0.3 + index * 0.2;
     return `${delay}s`;
   }
 }
+  
+
+

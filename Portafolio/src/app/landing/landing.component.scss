@@ -1,0 +1,429 @@
+/* Contenedor principal */
+.container {
+    width: 80%; /* Ajusta el ancho para hacerlo más pequeño */
+    max-width: 1200px; /* Ancho máximo para evitar que se expanda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    padding: 3rem;
+    border-radius: 8px; /* Redondear bordes del contenedor */
+    margin-left: 5%;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 1s ease-out forwards; /* Animación de desvanecimiento */
+    animation-delay: 1s; /* Retraso para que llegue después */
+}
+
+/* Contenedor para la imagen y el texto */
+.row {
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center;
+    margin: 0; /* Eliminar cualquier margen adicional */
+    padding: 0; /* Eliminar padding si es necesario */
+    margin-top: 6%;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1.5s; /* Retraso para que llegue después */
+}
+
+/* Estilo para la imagen redondeada */
+.image-container .rounded-img {
+    width: 80%;
+    height: auto;
+    border-radius: 20%; /* Redondear la imagen */
+    padding: 0.1rem; /* Reducir padding para juntar más los elementos */
+    margin-right: 0; /* Eliminar cualquier margen adicional */
+    margin-bottom: 0; /* Eliminar cualquier margen inferior */
+    margin-left: -25%;
+    margin-top: 5%;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s; /* Retraso para que llegue después */
+}
+
+/* Contenedor de texto */
+.text-container {
+    text-align: left;
+    margin: 0; /* Eliminar márgenes innecesarios */
+    padding: 0; /* Eliminar padding innecesario */
+    margin-top: -40%;
+    margin-left: 22%;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 2.5s; /* Retraso para que llegue después */
+}
+
+/* Ajustes en el tamaño del texto */
+.text-container h1 {
+    margin-top: 2%;
+    font-size: 3rem;
+    color: #17202a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    height: auto;
+    width: 100vh;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 3s; /* Retraso para que llegue después */
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #555;
+    font-size: 1.3rem;
+    color: #ffffff;
+    width: 100vh;
+    padding: 0.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 3.5s; /* Retraso para que llegue después */
+}
+
+/* Contenedor de texto adicional debajo */
+.more-text {
+    margin-top: -10%;
+    margin-left: 21%;
+    padding: 1rem;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 4s; /* Retraso para que llegue después */
+}
+
+.more-text p {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 4.5s; /* Retraso para que llegue después */
+}
+
+.button-cv {
+    margin-top: 1%;
+    margin-left: 21%;
+    padding: 0rem;
+    background-color: #555;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 5s; /* Retraso para que llegue después */
+}
+
+.button-cv i {
+    font-size: 2.2rem;
+    padding: 1%;
+    width: 100vh;
+    height: auto;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 5.5s; /* Retraso para que llegue después */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.iphone-img {
+    position: absolute;
+    right: 67%; /* Ajusta este valor según el espacio que necesites */
+    top: 60%;
+    transform: translateY(-65%); /* Mantén la imagen centrada verticalmente */
+    width: 47%;
+    max-width: 500px; /* Evita que la imagen se haga más grande que un límite */
+    height: 60%;
+    z-index: 10;
+    padding: 0%;
+    box-sizing: border-box;
+    background-size: 37% 76%; /* Asegura que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
+    /* Animación de deslizamiento */
+    animation: slideIn 6s ease-out forwards; /* La animación llamada 'slideIn' dura 6 segundos */
+}
+
+/* Definición de la animación slideIn */
+@keyframes slideIn {
+    0% {
+        right: -100%; /* Comienza fuera de la pantalla por la derecha */
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        right: 67%; /* Finaliza en la posición final */
+        opacity: 1; /* Termina siendo completamente visible */
+    }
+}
+
+/* Tecnologias */
+.section-tecnoligias {
+    padding: 7rem ;
+    background-color: #1c1c1c;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 0.5s;
+    overflow: hidden; /* Oculta lo que sale del contenedor */
+}
+
+
+
+.container-tecnologias h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    overflow: hidden; /* Mantiene la animación dentro del marco */
+    position: relative;
+    width: 100%;
+}
+
+.technologies {
+    display: flex;
+    gap: 2rem;
+    animation: scrollLeft 20s linear infinite;
+    width: max-content;
+}
+
+.tech-item {
+    text-align: center;
+    width: 150px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeInRight 1s ease forwards;
+}
+
+.tech-item i {
+    color: #00d8ff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tech-item p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.tech-item:hover i {
+    transform: scale(1.2);
+    color: #00ffae;
+}
+
+/* Carrusel - mueve todo el bloque a la izquierda */
+@keyframes scrollLeft {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* FadeIn desde la derecha */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Retrasos para la entrada secuencial */
+.tech-item:nth-child(1) { animation-delay: 0.5s; }
+.tech-item:nth-child(2) { animation-delay: 0.7s; }
+.tech-item:nth-child(3) { animation-delay: 0.9s; }
+.tech-item:nth-child(4) { animation-delay: 1.1s; }
+.tech-item:nth-child(5) { animation-delay: 1.3s; }
+.tech-item:nth-child(6) { animation-delay: 1.5s; }
+.tech-item:nth-child(7) { animation-delay: 1.7s; }
+.tech-item:nth-child(8) { animation-delay: 1.9s; }
+
+/* Proyectos */
+.section-proyectos {
+    padding: 4rem 2rem;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.container-proyectos h2 {
+    margin-top: 2%;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.proyectos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.proyecto-card {
+    width: 250px;
+    height: 350px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ffffff;
+    perspective: 1000px; /* Necesario para la animación 3D */
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.proyecto-card .card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Hace que la parte trasera sea visible cuando gire */
+}
+
+.proyecto-card:hover .card-inner {
+    transform: rotateY(180deg); /* Gira la tarjeta cuando se pasa el cursor */
+}
+
+.proyecto-card .front,
+.proyecto-card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden; /* Oculta el contenido del reverso cuando no es visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.proyecto-card .front {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.proyecto-card .back {
+    background-color: #34495e;
+    color: #ffffff;
+    transform: rotateY(180deg); /* La parte trasera comienza oculta */
+}
+
+.proyecto-card i {
+    color: #00d8ff;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.proyecto-card:hover i {
+    transform: scale(1.2);
+    color: #00ffae;
+}
+
+.proyecto-card h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.proyecto-card p {
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin: 0.5rem 0;
+}
+
+.proyecto-card .categoria {
+    font-size: 0.9rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Experiencia */
+.section-experiencia {
+    padding: 4rem 2rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.container-experiencia h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.experiencia-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.experiencia-card {
+    width: 250px;
+    height: 350px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ffffff;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    overflow: hidden;
+}
+
+.experiencia-card .front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    height: 100%;
+}
+
+.experiencia-card i {
+    color: #00d8ff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.experiencia-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.experiencia-card p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #dcdcdc;
+}

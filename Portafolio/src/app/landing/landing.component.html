@@ -1,0 +1,104 @@
+
+
+<section>
+    <div class="container">
+      <!-- Contenedor de imagen y texto -->
+      <div class="row">
+        <!-- Contenedor de imagen -->
+        <div class="image-container col-md-6">
+          <img [src]="'images/photo.png'" alt="Imagen de portafolio" class="rounded-img">
+        </div>
+  
+        <!-- Contenedor de texto -->
+        <div class="text-container col-md-6">
+          <h1>Desarrolador de Software</h1>
+          <p>Soy un desarrollador de software junior con más de 3 años de experiencia, especializado en el desarrollo de aplicaciones web y soluciones innovadoras. Me apasiona el aprendizaje continuo y la creación de proyectos que generen un impacto positivo.</p>
+        </div>
+       
+      </div>
+  
+      <!-- Contenedor para más texto debajo -->
+      <div class="more-text">
+        <p>Además, actualmente estoy cursando el séptimo semestre de la carrera de Ciberseguridad en la UANL FCFM, lo que me ha permitido ampliar mi perspectiva en la protección y seguridad de aplicaciones y sistemas.</p>
+        <div>
+            <img [src]="'images/iphone.webp'" alt="Imagen de iphone" class="iphone-img">
+        </div>
+      </div>
+      <div class="button-cv col-md-6">
+        <a href="https://drive.google.com/file/d/1vJRv3atfRw7Qa_txBudDwWnkOp9nCB6W/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa fa-folder"></i> Descargar
+          </a>
+          
+      </div>
+      <hr class="linea-blanca" />
+    </div>
+  </section>
+  <section class="section">
+    <div class="container-tecnologias">
+        <h2>Tecnologías</h2>
+        <div class="carousel-wrapper">
+            <div class="technologies">
+                <!-- Tecnologías normales -->
+                <div class="tech-item"><i class="fab fa-angular fa-3x"></i><p>Angular</p></div>
+                <!-- <div class="tech-item"><i class="fab fa-dot-net fa-3x"></i><p>.NET</p></div> -->
+                <div class="tech-item"><i class="fas fa-laptop-code fa-3x"></i><p>.NET</p></div>
+
+                <div class="tech-item"><i class="fab fa-github fa-3x"></i><p>Git</p></div>
+                <div class="tech-item"><i class="fas fa-database fa-3x"></i><p>PostgreSQL</p></div>
+                <div class="tech-item"><i class="fab fa-docker fa-3x"></i><p>Docker</p></div>
+                <div class="tech-item"><i class="fas fa-database fa-3x"></i><p>SQL Server</p></div>
+                <div class="tech-item"><i class="fab fa-python fa-3x"></i><p>Python</p></div>
+                <div class="tech-item"><i class="fab fa-linux fa-3x"></i><p>Linux</p></div>
+
+                <!-- Duplicado para loop continuo -->
+                <div class="tech-item"><i class="fab fa-angular fa-3x"></i><p>Angular</p></div>
+                <!-- <div class="tech-item"><i class="fab fa-dot-net fa-3x"></i><p>.NET</p></div> -->
+                <div class="tech-item"><i class="fas fa-laptop-code fa-3x"></i><p>.NET</p></div>
+
+                <div class="tech-item"><i class="fab fa-github fa-3x"></i><p>Git</p></div>
+                <div class="tech-item"><i class="fas fa-database fa-3x"></i><p>PostgreSQL</p></div>
+                <div class="tech-item"><i class="fab fa-docker fa-3x"></i><p>Docker</p></div>
+                <div class="tech-item"><i class="fas fa-database fa-3x"></i><p>SQL Server</p></div>
+                <div class="tech-item"><i class="fab fa-python fa-3x"></i><p>Python</p></div>
+                <div class="tech-item"><i class="fab fa-linux fa-3x"></i><p>Linux</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-proyectos">
+    <div class="container-proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyectos-wrapper">
+        @for (proyecto of proyectosData; track proyecto; let i = $index) {
+          <div
+            class="proyecto-card"
+            [style.animationDelay]="getDelay(i)"
+          >
+            <i class="{{ proyecto.icono }} fa-2x"></i>
+            <h3>{{ proyecto.titulo }}</h3>
+            <p>{{ proyecto.descripcion }}</p>
+            <span class="categoria">{{ proyecto.categoria }}</span>
+          </div>
+        }
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="section-experiencia">
+    <div class="container-experiencia">
+      <h2>Experiencia</h2>
+      <div class="experiencia-wrapper">
+        <div class="experiencia-card" *ngFor="let experiencia of experiencias; let i = index" [style.animationDelay]="getDelay(i)">
+          <!-- Parte frontal de la tarjeta -->
+          <div class="front">
+            <i class="{{ experiencia.icono }} fa-2x"></i>
+            <h3>{{ experiencia.titulo }}</h3>
+            <p>{{ experiencia.empresa }}</p>
+            <span class="fecha">{{ experiencia.fecha }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

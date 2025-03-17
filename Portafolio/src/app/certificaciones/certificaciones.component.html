@@ -1,0 +1,18 @@
+<section class="certifications-section" #certificationsSection  id="certifications-section">
+    <h2>Certificaciones y Logros</h2>
+    <div class="certifications-container">
+      @for (cert of certifications; track cert.Name) {
+        <div class="cert-card">
+          <img [src]="cert.ImageUrl" [alt]="cert.Name" class="cert-image" />
+          <h3>{{ cert.Name }}</h3>
+          <p>{{ cert.Description }}</p>
+          <a [href]="cert.AchievementUrl" target="_blank" rel="noopener noreferrer">
+            <button class="btn btn-primary">
+              Ver Logro
+            </button>
+          </a>
+        </div>
+      }
+    </div>
+  </section>
+  
